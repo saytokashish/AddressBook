@@ -1,0 +1,161 @@
+.my-font {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  background-color: #3399cc;
+  height: 110px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+}
+
+.logo-text {
+  height: 110px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  padding: 18px;
+}
+
+nav {
+  height: 38px;
+  background-color: #333333;
+}
+
+nav a {
+  color: white;
+}
+
+.font-size-md {
+  font-size: 15px;
+}
+
+.font-wt-1000 {
+  font-weight: 1000;
+}
+
+.br {
+  border: solid red 1px;
+}
+
+.contact h4 {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: #cccccc solid 1px;
+  margin: 0;
+}
+
+.contact .new-contact,
+.contact .no-contact-msg {
+  padding: 8px;
+  border: solid 1px #cccccc;
+  border-top: none;
+  height: 90px;
+  color: #333333;
+}
+
+.contact .new-contact:hover,
+.contact .no-contact-msg:hover {
+  background-color: #cee7f2;
+}
+
+.contact .new-contact h1,
+.contact .no-contact-msg h1 {
+  font-weight: 350;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact .new-contact p,
+.contact .no-contact-msg p {
+  padding: 0;
+  margin: 0;
+  padding-left: 8px;
+  line-height: 1.2;
+}
+
+.contact-form {
+  box-shadow: 7px -7px 12px 1px #a6a6a6, -7px 7px 12px 2px #a6a6a6;
+}
+
+.contact-form .row {
+  padding-top: 12px;
+  padding-left: 8px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.contact-form input {
+  height: 40px;
+  border: solid 1px #555555;
+}
+
+.contact-form .add-button {
+  background-color: #468c00;
+  border: solid 2px #468c00;
+  color: white;
+  height: 35px;
+  width: 115px;
+}
+
+.h-100px {
+  height: 100px !important;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.show-contact-details {
+  color: #393939;
+}
+
+.show-contact-details a {
+  color: black;
+}
+
+.show-contact-details .edit-contact::before {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  padding-right: 5px;
+  background-image: url("../images/Edit-icon.png");
+  background-size: cover;
+}
+
+.show-contact-details .delete-contact {
+  margin-left: 40px;
+}
+
+.show-contact-details .delete-contact::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 15px;
+  padding-right: 5px;
+  background-image: url("../images/delete1.png");
+  background-size: cover;
+}
+
+.show-contact-details h1 {
+  font-size: 30px;
+  color: #333333;
+}
+/*# sourceMappingURL=style.css.map */

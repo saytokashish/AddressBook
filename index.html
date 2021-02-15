@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="logo-text m-0" id="test">Address Book</h1>
+    </header>
+    <nav class="d-flex justify-content-between">
+      <div class="nav-links-container p-0 m-0">
+        <ul class="p-0 m-0 nav text-uppercase font-size-md font-wt-1000">
+          <li class="home nav-item p-2 pl-3" onclick="homePage()">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-item p-2 pl-3 add-contact"><a href="#">+Add</a></li>
+        </ul>
+      </div>
+      <div class="my-1 mr-3">
+        <img src="images/blog-icon.png" alt="image failed to load" />
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="d-flex mt-4">
+        <div
+          class="row p-0 contact flex-column ml-2 mr-3 col-md-4"
+          id="contacts"
+        >
+          <h4 class="text-uppercase pb-3">Contacts</h4>
+          <div class="no-contacts-msg new-contact">
+            <h1>No Contacts</h1>
+          </div>
+        </div>
+        <form
+          class="contact-form ml-4 col-md-6 mb-4 d-none"
+          id="contact-form"
+          onsubmit="addContact()"
+        >
+          <div class="row flex-column m-0">
+            <label for="fullName ">Name</label>
+            <input
+              type="text"
+              id="fullName"
+              class="w-80"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="row flex-column m-0">
+            <label for="email ">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="w-80"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="row m-0 justify-content-between w-80">
+            <div>
+              <label for="mobile">Mobile</label>
+              <input
+                type="tel"
+                id="mobile"
+                class="w-100"
+                placeholder=""
+                required
+              />
+            </div>
+            <div>
+              <label for="landline">Landline</label>
+              <input type="tel" id="landline" class="w-100" />
+            </div>
+          </div>
+          <div class="row flex-column m-0">
+            <label for="website ">Website</label>
+            <input type="text" id="website" class="w-80" />
+          </div>
+          <div class="row flex-column m-0">
+            <label for="address ">Address</label>
+            <textarea type="text" id="address" class="w-80 h-100px"> </textarea>
+          </div>
+          <div class="row m-0 d-flex justify-content-end mr-3 mt-3 mb-4">
+            <input
+              type="submit"
+              class="add-button"
+              id="addButton"
+              value="Add"
+            />
+          </div>
+        </form>
+        <div class="show-contact-details col-md-5 mt-4 ml-5"></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
